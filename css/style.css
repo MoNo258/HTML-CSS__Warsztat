@@ -1,0 +1,364 @@
+/*font-family: 'Raleway', sans-serif;*/
+/*font-family: 'Open Sans', sans-serif;*/
+
+/*VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV*/
+/*VVVVVV---------- main part ----------VVVVVV*/
+/*VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV*/
+
+:root {
+    --color-primary: #08A6E4;
+    --color-primary-shadow: rgba(7, 172, 230, .16);
+    --color-redish: #FB3B64;
+    --color-green: #55DFB4;
+    --color-black: #000000;
+    --color-grey: #A5A5A5;
+    --color-light-grey: #F7F7F7;
+    --color-white: #FFFFFF;
+    --height-header: 70px;
+    --border-link-hover: 4px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    color: var(--color-black);
+}
+
+.container {
+    max-width: 1124px;
+    margin: 0 auto;
+}
+
+/*VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV*/
+/*VVVVVV---------- hero ----------VVVVVV*/
+/*VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV*/
+
+.hero{
+    height: 100vh;
+    min-height: 712px;
+}
+
+/*VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV*/
+/*VVVVVV---------- header in hero ----------VVVVVV*/
+/*VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV*/
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: var(--height-header);
+    background: var(--color-white);
+    border-bottom: 1px solid var(--color-light-grey);
+    box-shadow: 0 3px 6px #00000029;
+}
+
+.header__container{
+    max-width: 1352px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    color: var(--color-primary);
+    font-size: 32px;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+.menu{
+    height: 100%;
+}
+
+.menu__list{
+    height: 100%;
+    display: flex;
+    /*justify-content: space-between;*/
+    /*align-items: center;*/
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu__list-link{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*padding-left: 95px;*/
+    margin-left: 95px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 11px;
+    color: var(--color-grey);
+
+}
+
+.menu__list-link:hover {
+    border-bottom: var(--border-link-hover) solid var(--color-primary);
+    padding-top: var(--border-link-hover);
+    color: var(--color-black);
+}
+
+/*VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV*/
+/*VVVVVV---------- banner in hero ----------VVVVVV*/
+/*VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV*/
+
+
+.banner{
+    height: 712px;
+    /*background-image: url("../images/background.png");*/
+    /*background-position: bottom;*/
+    /*background-size: 594px;*/
+    padding-top: 130px;
+    margin-top: var(--height-header);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    /*position: relative;*/
+}
+
+.banner__bkg{
+
+    background-image: url("../images/background.png");
+    background-position: bottom;
+    background-size: cover;
+    min-height: 594px;
+    width: 100%;
+}
+
+.banner__title{
+    font-size: 49px;
+    margin-bottom: 20px;
+}
+.banner__text{
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 38px;
+}
+.banner__button{
+    margin: 23px 0;
+}
+.banner__button-btn{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    text-decoration: none;
+    padding: 23px 157px;
+    border-radius: 40px;
+    box-shadow: 5px 10px 14px var(--color-primary-shadow);
+}
+
+
+/*VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV*/
+/*VVVVVV---------- section stats ----------VVVVVV*/
+/*VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV*/
+
+.section-stats{
+    height: 531px;
+    width: 100%;
+    display: flex;
+}
+.section-stats{}
+.stats-title{
+    font-size: 36px;
+    margin: 100px 0;
+    width: 100%;
+}
+.stats-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.stats-card{
+    height: 168px;
+    width: 176px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+.stats-card_img{
+    max-width: 40%;
+    margin: 0 30px 0 auto;
+}
+
+/*.stats-card_img::before{*/
+/*    content: "";*/
+/*    !*top: 0;*!*/
+/*    !*left: 50%;*!*/
+/*    height: 63px;*/
+/*    width: 63px;*/
+/*    border-radius: 50%;*/
+/*    background: var(--color-primary);*/
+/*    z-index: -1;*/
+/*    position: absolute;*/
+/*}*/
+
+.stats-card__title::before{
+    content: "";
+    width: 63px;
+    height: 63px;
+    border-radius: 50%;
+    z-index: -1;
+    position: absolute;
+    top:-80px;
+    left: 25%;
+}
+
+.stats-card__title-first::before{
+    background: var(--color-redish);
+}
+.stats-card__title-second::before{
+    background: var(--color-primary);
+}
+.stats-card__title-third::before{
+    background: var(--color-green);
+}
+
+.stats-card__title{
+    font-size: 20px;
+    font-weight: 900;
+    letter-spacing: 6px;
+    position: relative;
+}
+.stats-card__text{
+    font-size: 16px;
+    font-family: Raleway,sans-serif;
+    text-align: center;
+    color: var(--color-grey);
+    height: 48px;
+    line-height: 19px;
+}
+
+/*VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV*/
+/*VVVVVV---------- section benefits ----------VVVVVV*/
+/*VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV*/
+
+
+
+.section-benefits{
+    width: 100%;
+    height: 1395px;
+    background: var(--color-light-grey);
+    padding-top: 105px;
+}
+
+
+.benefits-card{
+    height: 370px;
+    width: 100%;
+    background: var(--color-white);
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid var(--color-light-grey);
+    border-radius: 5px;
+
+}
+
+.benefit-order__one{
+    color: var(--color-black);
+    width: 623px;
+    margin-top: 91px;
+    margin-left: 35px;
+}
+
+.benefit-info__title{
+    font-family: 'Raleway', sans-serif;;
+    font-size: 36px;
+    line-height: 42px;
+    margin-bottom: 30px;
+
+}
+
+.benefit-info__text{
+    width: 416px;
+    font-family: "Open Sans",sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    position: relative;
+
+}
+
+.benefit-info__text::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -50px;
+    height: 4px;
+    width: 80%;
+    border-bottom: 4px solid var(--color-redish);
+
+}
+
+.benefit-order__second{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.benefit-card_img{
+    height: 70%;
+    width: 70%;
+
+    /*position: relative;*/
+
+    /*display: flex;*/
+    /*justify-content: center;*/
+    /*align-items: end;*/
+}
+
+.benefit-after{
+    position: relative;
+}
+
+.benefit-after::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 180px;
+    width: 180px;
+    color: var(--color-redish);
+    background: var(--color-redish);
+    border-radius: 41px;
+    z-index: 10;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
