@@ -58,7 +58,9 @@ body {
 }
 
 .header__container{
-    max-width: 1352px;
+    /*max-width: 1352px;*/
+    margin-left: 136px;
+    margin-right: 136px;
     height: 100%;
     display: flex;
     justify-content: space-between;
@@ -776,6 +778,8 @@ body {
     justify-content: space-between;
     align-items: center;
     margin: 20px 137px auto 137px;
+    padding-left: 15px;
+    padding-right: 15px;
 
 }
 .container{}
