@@ -57,6 +57,14 @@ body {
     box-shadow: 0 3px 6px #00000029;
 }
 
+/*VVVVVVVVVVVVVVVVVVVVVV---------- sticky class for scrolling ----------VVVVVVVVVVVVVVVVVVVVVV*/
+.header.sticky {
+    transition: 0.5s;
+    background: #fff;
+    box-shadow: 0 3px 6px #00000029;
+    z-index: 2;
+}
+
 .header__container{
     /*max-width: 1352px;*/
     margin-left: 136px;
