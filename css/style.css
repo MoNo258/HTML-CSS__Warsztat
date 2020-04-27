@@ -1,5 +1,3 @@
-/*font-family: 'Raleway', sans-serif;*/
-/*font-family: 'Open Sans', sans-serif;*/
 
 /*VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV*/
 /*VVVVVV---------- main part ----------VVVVVV*/
@@ -16,6 +14,8 @@
     --color-white: #FFFFFF;
     --height-header: 70px;
     --border-link-hover: 4px;
+    --font-primary: 'Raleway', sans-serif;
+    --font-secondary: 'Open Sans', sans-serif
 }
 
 * {
@@ -24,7 +24,7 @@
 
 body {
     margin: 0;
-    font-family: 'Raleway', sans-serif;
+    font-family: var(--font-primary);
     color: var(--color-black);
 }
 
@@ -38,8 +38,9 @@ body {
 /*VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV*/
 
 .hero{
-    height: 100vh;
-    min-height: 712px;
+    /*height: 100vh;*/
+    /*height: 912px;*/
+    /*min-height: 712px;*/
 }
 
 /*VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV*/
@@ -106,7 +107,7 @@ body {
     margin-left: 95px;
     text-decoration: none;
     text-transform: uppercase;
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--font-secondary);
     font-weight: bold;
     font-size: 11px;
     color: var(--color-grey);
@@ -125,9 +126,6 @@ body {
 
 .banner{
     height: 712px;
-    /*background-image: url("../images/background.png");*/
-    /*background-position: bottom;*/
-    /*background-size: 594px;*/
     padding-top: 130px;
     margin-top: var(--height-header);
     display: flex;
@@ -141,7 +139,7 @@ body {
     background-image: url("../images/background.png");
     background-position: bottom;
     background-size: cover;
-    min-height: 594px;
+    min-height: 508px;
     width: 100%;
 }
 
@@ -151,14 +149,14 @@ body {
 }
 .banner__text{
     font-size: 16px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--font-secondary);
     margin-bottom: 38px;
 }
 .banner__button{
     margin: 23px 0;
 }
 .banner__button-btn{
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--font-secondary);
     font-size: 16px;
     font-weight: bold;
     background-color: var(--color-primary);
@@ -183,6 +181,7 @@ body {
     font-size: 36px;
     margin: 100px 0;
     width: 100%;
+    padding-top: 100px;
 }
 .stats-list{
     display: flex;
@@ -215,7 +214,7 @@ body {
     border-radius: 50%;
     z-index: -1;
     position: absolute;
-    top: 0px;
+    top: 0;
     left: 25%;
 }
 
@@ -237,7 +236,7 @@ body {
 }
 .stats-card__text{
     font-size: 16px;
-    font-family: Raleway,sans-serif;
+    font-family: var(--font-primary);
     text-align: center;
     color: var(--color-grey);
     height: 48px;
@@ -285,7 +284,7 @@ body {
 }
 
 .benefit-info__title{
-    font-family: 'Raleway', sans-serif;;
+    font-family: var(--font-primary);
     font-size: 36px;
     line-height: 42px;
     margin-bottom: 30px;
@@ -297,7 +296,7 @@ body {
 
 .benefit-info__text{
     width: 416px;
-    font-family: "Open Sans",sans-serif;
+    font-family: var(--font-secondary);
     font-size: 16px;
     line-height: 22px;
     position: relative;
@@ -513,7 +512,7 @@ body {
 }
 
 .pricing-card__cost{
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--font-secondary);
     font-size: 46px;
     font-weight: 300;
     padding-bottom: 15px;
@@ -549,7 +548,7 @@ body {
 }
 
 .card-list__item{
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--font-secondary);
     font-size: 14px;
     padding-left: 18px;
     padding-bottom: 20px;
@@ -577,7 +576,7 @@ body {
 }
 
 .pricing-card__button{
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--font-secondary);
     font-weight: bold;
     width: 150px;
     height: 50px;
@@ -638,7 +637,7 @@ body {
     padding-bottom: 22px;
 }
 .contact-text{
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--font-secondary);
     font-size: 16px;
     padding-bottom: 42px;
 }
@@ -647,7 +646,7 @@ body {
     justify-content: flex-start;
 }
 .contact-details__el{
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--font-secondary);
     font-size: 16px;
     color: var(--color-grey);
     padding: 0 20px 0 40px;
@@ -660,13 +659,13 @@ body {
     content: url("../images/mail-icon.svg");
     position: absolute;
     top: -6px;
-    left: 0px;
+    left: 0;
 }
 .contact-details__el-phone::before{
     content: url("../images/phone-icon.svg");
     position: absolute;
     top: -6px;
-    left: 0px;
+    left: 0;
 }
 
 .contact-form{
@@ -684,7 +683,7 @@ body {
     width: 100%;
     border: none;
     border-bottom: 1px solid rgba(149, 152, 154, 1);
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--font-secondary);
     font-size: 16px;
     padding: 10px;
 }
@@ -698,7 +697,7 @@ body {
 
 .form-label{
     width: 100%;
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--font-secondary);
     font-size: 11px;
     font-weight: bold;
     color: var(--color-primary);
@@ -734,13 +733,13 @@ body {
 
 }
 .form-checkbox__label{
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--font-secondary);
     font-size: 12px;
     color: #707070;
 }
 .form-button{
     margin: 20px 0 0 auto;
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--font-secondary);
     font-size: 13px;
     font-weight: bold;
     color: var(--color-white);
@@ -786,7 +785,7 @@ body {
     margin-bottom: 7px;
 }
 .footer-copyright{
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--font-secondary);
     font-size: 11px;
     color: var(--color-grey);
 }
